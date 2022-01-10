@@ -32,6 +32,8 @@ if [ "$BUILD_LATEX" = true ] ; then
 fi
 apk add $PACKAGES
 
+echo "Doxygen version $(doxygen --version)"
+
 # run "regular" doxygen
 doxygen $1
 
